@@ -1,5 +1,6 @@
 package io.egen.rentalflix;
 
+
 import java.util.List;
 
 public interface IFlix {
@@ -24,6 +25,9 @@ public interface IFlix {
 	 */
 	public Movie create (Movie movie);
 	
+	
+	
+
 	/**
 	 * Update an existing movie
 	 * @param movie
@@ -31,6 +35,8 @@ public interface IFlix {
 	 */
 	public Movie update (Movie movie);
 	
+	
+
 	/**
 	 * Delete an existing movie 
 	 * @param id
@@ -46,5 +52,6 @@ public interface IFlix {
 	 * @param user
 	 * @return true: if movie can be rented, false otherwise
 	 */
-	public boolean rentMovie (int movieId, String user);
+	public boolean rentMovie (int id, String user);
+	
 }
